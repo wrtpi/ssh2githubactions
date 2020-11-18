@@ -46,7 +46,9 @@ tmate -S ${TMATE_SOCK} wait tmate-ready
 TMATE_SSH=$(tmate -S ${TMATE_SOCK} display -p '#{tmate_ssh}')
 TMATE_WEB=$(tmate -S ${TMATE_SOCK} display -p '#{tmate_web}')
 MSG="
-* 🍎🍉✈️ GitHub Actions 😊 tmate session info:✈️ *
+* 🍎 GitHub Actions 😊 tmate session info: 🍉 *
+
+✈️=====================WRT========================✈️
 
 ✳️  *CLI:*   \`${TMATE_SSH}\`
 
