@@ -48,7 +48,7 @@ TMATE_WEB=$(tmate -S ${TMATE_SOCK} display -p '#{tmate_web}')
 MSG="
 * 🍎 GitHub Actions 😊 tmate session info: 🍉 *
 
-✈️=====================WRT========================✈️
+✈️=======WRT========= currentdate=$(date +%Y-%m-%d %H:%M:%S ) ===============✈️
 
 ✳️  *CLI:*   \`${TMATE_SSH}\`
 
