@@ -14,3 +14,6 @@ runs:
 branding:
   icon: 'terminal'
   color: 'gray-dark'
+#branding:
+#  icon: 'terminal'
+#  color: 'green'

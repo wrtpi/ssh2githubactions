@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Copyright (c) 2020 Tony
+# Copyright (c) 2020-2021 Tony
 #
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
@@ -8,7 +8,7 @@
 # https://github.com/wrtpi/ssh2githubactions
 # File name：tmate2actions.sh
 # Description: Connect to Github Actions VM via SSH by using tmate
-# Version: 2.0
+# Version: 2.1
 #
 
 set -e
@@ -46,16 +46,11 @@ tmate -S ${TMATE_SOCK} wait tmate-ready
 TMATE_SSH=$(tmate -S ${TMATE_SOCK} display -p '#{tmate_ssh}')
 TMATE_WEB=$(tmate -S ${TMATE_SOCK} display -p '#{tmate_web}')
 MSG="
-* 🍎 GitHub Actions 😊 tmate session info: 🍉 *
-
-✈️=======WRT======⏰ `date --date='0 days ago' "+%Y-%m-%d %H:%M:%S"` ⏱===========✈️
-
+* ✈️ GitHub Actions 😊 tmate session info:✈️ *
+✈️=====OpenWRT====⏰ `date --date='0 days ago' "+%Y-%m-%d %H:%M:%S"` ⏱===SSH===✈️
 ✳️  *CLI:*   \`${TMATE_SSH}\`
-
 🌏  *URL:*   ${TMATE_WEB}  🍎
-
 🔔  *TIPS:*   Run '\`touch ${CONTINUE_FILE}\`' to continue to the next step.
-
 "
 
 if [[ -n "${TELEGRAM_BOT_TOKEN}" && -n "${TELEGRAM_CHAT_ID}" ]]; then

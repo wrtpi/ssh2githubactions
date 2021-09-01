@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Copyright (c) 2020 Tony  
+# Copyright (c) 2020-2021 Tony  
 #
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
@@ -8,7 +8,7 @@
 # https://github.com/wrtpi/ssh2githubactions
 # File name：ngrok2actions.sh
 # Description: Connect to Github Actions VM via SSH by using ngrok
-# Version: 2.0
+# Version: 2.1
 #
 
 Green_font_prefix="\033[32m"

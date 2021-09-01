@@ -1,4 +1,4 @@
-# SSH to GitHub Actions
+## SSH to GitHubActions
 
 This GitHub Action offers you connect to GitHub Actions VM via SSH for interactive debugging
 
@@ -15,7 +15,7 @@ This GitHub Action offers you connect to GitHub Actions VM via SSH for interacti
 
 ```yaml
 - name: Start SSH via tmate
-  uses: VPN-V2Ray/ssh2githubactions@main
+  uses: wrtpi/ssh2githubactions@main
   # Send connection info to Telegram (optional)
   # You can find related documents here: https://core.telegram.org/bots
   env:
@@ -27,7 +27,7 @@ This GitHub Action offers you connect to GitHub Actions VM via SSH for interacti
 
 ```yaml
 - name: Start SSH via ngrok
-  uses: VPN-V2Ray/ssh2githubactions@main
+  uses: wrtpi/ssh2githubactions@main
   with:
     mode: ngrok
   env:
